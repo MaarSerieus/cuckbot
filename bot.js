@@ -21,7 +21,7 @@ bot.on("ready", () => {
 
 bot.on("guildMemberAdd", (user) => {
     try {
-    user.guild.channels.find("name", "general").send(`Fuck you ${user}`);
+    bot.guilds.get("397534156411895819").send(`Fuck you ${user}`);
     } catch(e) {
         console.log(`${e}`);
     }
